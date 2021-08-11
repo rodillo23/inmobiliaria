@@ -1,0 +1,12 @@
+%p#notice= notice
+
+%p
+  %b Title:
+  = @house.title
+%p
+  %b Description:
+  = @house.description
+
+= link_to 'Edit', edit_house_path(@house)
+\|
+= link_to 'Back', houses_path
